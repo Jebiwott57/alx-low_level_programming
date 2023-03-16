@@ -1,2 +1,7 @@
-#!/bin/bash
-	printf (with proper grammer, but the outcome is a piece of art,);
+# Include < stdio.h >
+
+int main(void)
+{
+	printf("with proper grammar\n, but the outcome is a piece of art\,");
+	return (0);
+}
