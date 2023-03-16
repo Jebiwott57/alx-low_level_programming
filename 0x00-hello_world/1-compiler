@@ -1,2 +1,2 @@
 #!/bin/bash
-export $CFILE  | gcc $CFILE -CO {$CFILE}.O
+gcc -C $CFILE -O {$CFILE} | tr ".c" ".o"
