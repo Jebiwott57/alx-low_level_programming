@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -Eo c | tr " " "\n"
+export $CFILE | gcc -E | gcc -o | tr " " "\n"
