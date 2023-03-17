@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE
+export (intel syntax) > $CFILE | gcc -S $CFILE
