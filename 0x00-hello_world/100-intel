@@ -1,2 +1,2 @@
 #!/bin/bash
-print f("intel syntax"); | gcc -S $CFILE 
+gcc -S $CFILE | ./$CFILE
