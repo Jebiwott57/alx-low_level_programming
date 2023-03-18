@@ -17,13 +17,13 @@ int main(void)
 	{
 	printf("%u is positive\n", (unsigned char) (n));
 	}
-	if ((n) == 0)
+	else if ((n) == 0)
 	{
 	printf("%u is zero\n", (unsigned char) (n));
 	}
-	if ((n) < 0)
+	else if ((n) < 0)
 	{
-	printf("%u is negative\n", (unsigned char) (n));
+	printf("%u is negative\n", (signed char) (n));
 	}
 	return (0);
 }
