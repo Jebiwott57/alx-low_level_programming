@@ -8,10 +8,12 @@
 
 int main(void)
 {
-	char echo {a..z} = a;
+	char ch;
 
-	putchar("%d/n",(signed char) alphabets(a));
-
-
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+	putchar(ch);
+	putchar('\n');
+	}
 	return (0);
 }
