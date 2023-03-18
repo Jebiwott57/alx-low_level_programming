@@ -23,7 +23,7 @@ int main(void)
 	}
 	else if ((n) < 0)
 	{
-	printf("%u is negative\n", (signed char) (n));
+	printf("%d is negative\n", (signed char) (n));
 	}
 	return (0);
 }
