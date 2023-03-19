@@ -7,13 +7,20 @@
  */
 
 int main(void)
-
 {
-	char ch;
+	int ch;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	ch = 'a';
+
+	while (ch <= 'z')
 	{
-	putchar(remove q and e from the string except ch);
+	if (ch == 'e' || ch == 'q')
+	{
+		ch++;
+		continue;
+	}
+	putchar(ch);
+	ch++;
 	}
 	putchar('\n');
 	return (0);
