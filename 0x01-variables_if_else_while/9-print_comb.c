@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -9,16 +10,18 @@
 int main(void)
 
 {
-	int i, C;
-
-	C = ',';
+	int i;
 
 	for (i = '0'; i <= '9'; i++)
 	{
 	/* \t is a horizontal tab */
 	putchar(i);
-	putchar(C);
-	putchar('\t');
+	if (i == '9')
+	{
+		continue;
+	}
+	putchar(',');
+	putchar(' ');
 	}
 	putchar('\n');
 	return (0);
