@@ -1,29 +1,16 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Enrty point
- *
- * Return: Always 0 (Success)
- */
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
+
 int main(void)
 {
-	int n;
+	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if ((n) > 0)
-	{
-	printf("%u is positive\n", (unsigned char) (n));
-	}
-	else if ((n) == 0)
-	{
-	printf("%u is zero\n", (unsigned char) (n));
-	}
-	else if ((n) < 0)
-	{
-	printf("%d is negative\n", (signed char) (n));
-	}
+	i = 0;
+	positive_or_negative(i);
+
 	return (0);
 }
