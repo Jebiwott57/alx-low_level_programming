@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 
 /**
  * main - Print 1 to 100 but for multiples of
@@ -12,25 +12,28 @@ int main(void)
 {
 	int a;
 
-	if (a % 3 == 0 && i % 5 != 0)
+	for (a = 1; a <= 100; a++)
 	{
-		printf("Fizz");
-	}
-	else if (a % 5 == 0 && a % 3 != 0)
-	{
-		printf("Buzz");
-	}
-	else if (a % 3 == 0 && a % 5 == 0)
+	if (a % 3 == 0 && a % 5 == 0)
 	{
 		printf("FizzBuzz");
 	}
-	else if (a == 1)
+	else if (a % 3 == 0 && a % 5 != 0)
 	{
-		printf("%d", a);
+		printf("Fizz");
+	}
+	else if (a % 5 == 0)
+	{
+		printf("Buzz");
 	}
 	else
 	{
 		printf("%d", a);
+	}
+	if (a != 100)
+	{
+		printf(" ");
+	}
 	}
 	printf("\n");
 	return (0);
