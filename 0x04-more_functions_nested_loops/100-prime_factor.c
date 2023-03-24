@@ -2,21 +2,38 @@
 #include <stdio.h>
 
 /**
- * main - list the prime factors of a number
+ * main - prime factors of 612852475143
  *
- * Return: prime
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	unsigned long int a, b = 612852475143;
+	long int n;
+	long int max;
+	long int i;
 
-	for (a = 3; a < (b / 2); a = (a + 2))
+	n = 612852475143;
+	max = -1;
+
+	while (n % 2 == 0)
 	{
-		while ((b % a == 0) && (b != a))
+		max = 2;
+		n /= 2;
+	}
+
+	for (i = 3; i <= sqrt(n); i = i + 2)
+	{
+		while (n % i == 0)
 		{
-			a = a / b;
-			printf("%lu\n", b);
-			return (0);
+			max = i;
+			n = n / i;
 		}
 	}
+
+	if (n > 2)
+	max = n;
+
+	printf("%ld\n", max);
+
+	return (0);
 }
