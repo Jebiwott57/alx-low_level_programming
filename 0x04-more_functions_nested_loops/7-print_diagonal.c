@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_diagonal on the terminal
+ * print_diagonal - print diagonal on the terminal
  *
- * @n: representation of diagonal
+ * @n: representation of diagonals to be printed
  * Return: 0 (Success)
  */
 void print_diagonal(int n)
@@ -13,18 +13,19 @@ void print_diagonal(int n)
 		_putchar('\n');
 	}
 	else
-	
+	{
 	int a, b;
 
-	for (a = 0; a <= n; a++)
-		{
-			for (b = 0; b <= n; b++)
+	for (a = 0; a < n; a++)
 	{
-				if (a ==b)
+	for (b = 0; b < n; b++)
+	{
+		if (a == b)
 		_putchar('\\');
-				else if (b < a)
+		else if (b < a)
 		_putchar(' ');
 	}
-		_putchar('\n');
-		}
+	_putchar('\n');
+	}
+	}
 }
