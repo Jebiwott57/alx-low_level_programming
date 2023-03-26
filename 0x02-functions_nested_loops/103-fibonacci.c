@@ -2,27 +2,27 @@
 #include "main.h"
 
 /**
- * main - print the first 50 fibonacci numbers
+ * main - print the first 52 fibonacci numbers
  *
  * Return: 0 (Success)
  */
 int main(void)
 {
-	int n = 0;
-	long i = 1, j = 2, k, cnt, sum;
+	long int i = 1, j = 2, k, sum = 0;
 
-	printf("%lu, %lu, ", i, j);
-	for (cnt = 3;; cnt++)
+	int cnt;
+
+	for (cnt = 1; cnt <= 33; ++cnt)
 	{
-		for (k = n + i; k <= 4000000; k++)
+		if (j <= 4000000 && (j % 2) == 0)
 		{
-		i + k == sum;
-		printf("%lu ", sum);
-
-		n = i;
-		i = k;
+		sum = sum + j;
 		}
+		k = i + j;
+		i = j;
+		j = k;
 	}
-	printf("\n");
+	printf("%lu\n", sum);
+
 	return (0);
 }
