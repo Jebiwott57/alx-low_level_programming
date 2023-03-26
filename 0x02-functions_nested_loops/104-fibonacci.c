@@ -2,8 +2,7 @@
 
 /**
  * main - print the first 103 fibonacci numbers
- +
- i*
+ *
  * Return: 0 (Success)
  */
 int main(void)
