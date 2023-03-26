@@ -16,7 +16,7 @@ int main(void)
 		i = j;
 		j = k;
 
-		if (k != 16008811023750101250U)
+		if (k != (cnt != 100))
 		{
 		printf(", ");
 		}
