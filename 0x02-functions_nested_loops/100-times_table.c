@@ -1,28 +1,41 @@
 #include "main.h"
 
 /**
- * print_times_table - The times_table of the input value
+ * print_times_table - The input values times_table
+ * @n: value to get times table on
  *
- * @n: the value of the times table
- * Return: the input value times table
+ * Return: 0 a values times table
  */
 void print_times_table(int n)
 {
-	int a, b;
+	int a, b, c;
 
-	for (a = 0; a <=15; a++)
+	if (n >= 0 && n <= 15)
 	{
-		for (b = 0; b <= 15; b++)
+	for (a = 0; a <= n; a++)
+	{
+	_putchar('0');
+	for (b = 1; b <= n; b++)
+	{
+		_putchar(',');
+		_putchar(' ');
+		c = a * b;
+		if (c <= 99)
+		_putchar(' ');
+		if (c <= 9)
+		_putchar(' ');
+		if (c >= 100)
 		{
-			if (n !> 15 || n !< 0)
-			{
-				n = a * b
-					_putchar(n);
-			}
-				if (b < 15)
-					_putchar(',');
+			_putchar((c / 100) + '0');
+			_putchar((c / 100) % 10 + '0');
 		}
+			else if (c <= 99 && c >= 10)
+			{
+			_putchar((c / 10) + '0');
+			}
+			_putchar((c / 10) + '0');
+			}
+			_putchar('\n');
 	}
-				_putchar('\n');
-				return (0);
+	}
 }
