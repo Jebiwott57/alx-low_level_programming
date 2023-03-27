@@ -4,13 +4,14 @@
  * print_rev - print a string int reverse followed by a new line.
  * @s: string to print in reverse.
  *
+ * Return: 0 (Success)
  */
 void print_rev(char *s)
 {
 	int l = 0;
 	int o;
 
-	while (*str != '\0')
+	while (*s != '\0')
 	{
 	l++;
 	s++;
