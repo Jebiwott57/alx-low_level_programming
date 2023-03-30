@@ -2,13 +2,13 @@
 
 /**
  * *_strncat - function that concatenated two strings.
- * @dest: string1
- * @src: string2
- * @n:number of bytes from src.
+ * @dest: destination string.
+ * @src: source string.
+ * @n:number of bytes to be concatenated from src.
  *
- * Return: dest.
+ * Return: pointer destination string.
  */
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
 	int string_length = 0, str_len = 0;
 
@@ -16,11 +16,12 @@ char *_strncat(char *dest, char *src, int n);
 	{
 		string_length++;
 	}
-	while (src[str_len] != '\0')
+	while (str_len < n && src[str_len] != '\0')
 	{
+		dest[string_length] = src[str_len];
+		string_length++;
 		str_len++;
 	}
-	while 
-
+	dest[string_length] = '\0';
 	return (dest);
 }
