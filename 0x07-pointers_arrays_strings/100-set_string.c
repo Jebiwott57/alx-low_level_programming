@@ -8,7 +8,7 @@
  *
  * Return: void.
  */
-void ste_string(char **s, chat *to)
+void set_string(char **s, char *to)
 {
 	*s = to;
 }
