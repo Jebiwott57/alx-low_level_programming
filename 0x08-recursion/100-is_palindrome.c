@@ -2,7 +2,8 @@
 int string_length(char *s);
 int checker(char *s, int a, int length);
 /**
- * is_palindrome - A function that returns 1 if a string is a palindrome and 0 if not.
+ * is_palindrome - A function that returns 1
+ * if a string is a palindrome and 0 if not.
  * @s: A pointer to be scanned.
  *
  * Return: 1 if string is palindrome or 0 otherwise.
