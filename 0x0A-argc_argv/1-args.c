@@ -6,7 +6,7 @@
  * @argc: Argument count.
  * @argv: Argument vector to print.
  *
- * Return 0 Always Success.
+ * Return: 0 Always Success.
  */
 int main(int argc, char *argv[])
 {
