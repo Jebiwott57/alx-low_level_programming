@@ -2,10 +2,10 @@
 #define DOG_H
 
 /**
- * strut dog -
+ * struct dog - A dog's basic info.
  * @name: 1st identity
  * @age: 2nd identity
- * owner: 3rd identity
+ * @owner: 3rd identity
  *
  * Description: Long description.
  */
