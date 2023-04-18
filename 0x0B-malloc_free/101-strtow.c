@@ -63,7 +63,7 @@ char **strtow(char *str)
 				ptr[j] = a - m;
 				j++;
 				m = 0;
-			}	
+			}
 		}
 		else if (m++ == 0)
 			start = i;
