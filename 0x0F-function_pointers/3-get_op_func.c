@@ -4,7 +4,7 @@
 /**
  * get_op_func - Select the corrrest function to perform
  * when called upon.
- * @s: 	Pointer to operator passed as an argument.
+ * @s: Pointer to operator passed as an argument.
  * to the program.
  *
  * Return: pointer to the function corresponding to the
@@ -26,6 +26,5 @@ int (*get_op_func(char *s))(int, int)
 	while (ops[i].op != NULL  && *(ops[i].op) != *s)
 		i++;
 
-	return (ops[i]).f;
-
+	return (ops[i].f);
 }
