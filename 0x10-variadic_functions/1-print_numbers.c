@@ -3,7 +3,7 @@
 
 /**
  * print_numbers - A function that prints numbers.
- * @sepatator: String to be print between functions.
+ * @separator: String to be print between functions.
  * @n: Number of integers to passed to the function.
  * @...: A variable of numbers to print.
  *
