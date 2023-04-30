@@ -1,9 +1,6 @@
-MORE SINGLY LINKED LIST.
+MORE SINGLY LINKED LIST
 
-A structure formed of nodes. Each node contains an element and a pointer to the next node maintaining the structure of the list. This type of structure is unidirectional and traversed in one direction from head to the tail. 
-
-
-TASKS.
+TASKS
 0. Print list
 mandatory
 Write a function that prints all the elements of a listint_t list.
