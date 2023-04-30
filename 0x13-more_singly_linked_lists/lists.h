@@ -1,9 +1,6 @@
 #ifndef LISTS_HEADER_FILE
 #define LISTS_HEADER_FILE
 
-#include <stdlib.h>
-#include <stdio.h>
-
 /*  STRUCTURE TYPEDEF  */
 
 /**
