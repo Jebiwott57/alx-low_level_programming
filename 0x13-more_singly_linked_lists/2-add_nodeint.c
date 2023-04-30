@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
  * add_nodeint - Function that adds a new node at
@@ -14,7 +13,6 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	listint_t *newaddress;
 
 	newaddress = malloc(sizeof(listint_t));
-
 	if (newaddress == NULL)
 		return (NULL);
 
@@ -22,5 +20,5 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	(*newaddress).next = *head;
 	*head = newaddress;
 
-	return (*head);
+	return (newaddress);
 }
