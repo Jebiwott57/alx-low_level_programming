@@ -38,4 +38,19 @@ size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
+/* STRUSTURE TYPEDEF ADVANCED TASK */
+
+/**
+ * struct listt_t - Singly linked list.
+ * @s: Pointer to node.
+ * @next: Pointer to the next node.
+ *
+ * Description: Singly linked list for pointer in advanced task.
+ */
+typedef struct listt_t
+{
+	void *s;
+	struct listt_t *next;
+} list_v;
+
 #endif
