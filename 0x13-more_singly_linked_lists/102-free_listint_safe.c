@@ -51,7 +51,7 @@ size_t free_listint_safe(listint_t **h)
 }
 
 /**
- * listint_length - Find unique codes in the linked 'listint_t' list.
+ * listint_length2 - Find unique codes in the linked 'listint_t' list.
  * @head: The first node of the linked list 'listint_t'.
  *
  * Return: void.
