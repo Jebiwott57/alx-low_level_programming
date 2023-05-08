@@ -1,5 +1,5 @@
 #ifndef MAIN_HEADER_FILE
-#define MAIN_HWADER_FILE
+#define MAIN_HEADER_FILE
 
 #include <unistd.h>
 #include <fcntl.h>
