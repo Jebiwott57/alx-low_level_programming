@@ -81,8 +81,8 @@ int main(int argc, char *argv[])
 
 	} while (wr > 0);
 
-	close(file_from);
-	close(file_to);
+	close_file(file_from);
+	close_file(file_to);
 	free(buff);
 
 	return (0);
