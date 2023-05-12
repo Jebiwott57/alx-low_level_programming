@@ -1,29 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
-void error_98(int file_from, char *buff, char *argv);
 char *create_buffer(char *file);
 void close_file(int fd);
 
 #define BUFF_SIZE 1024
-
-/**
- * error_98 - If file_from does't exist or can't be read.
- * @file_from: The first argument file to read and append.
- * @buff: The buffer.
- * @argv: The argument vector.
- *
- * Return: void.
- */
-void error_98(int file_from, char *buff, char *argv)
-{
-	if (file_from == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv);
-		free(buff);
-		exit(98);
-	}
-}
 
 /**
  * create_buffer - Allocate 1024 bytes for a buffer in memory at a time.
@@ -84,7 +65,9 @@ int main(int argc, char *argv[])
 	do {
 		if (file_from == -1 || rd == -1)
 		{
-			error_98(rd, buff, argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			free(buff);
+			exit(98);
 		}
 		wr = write(file_to, buff, rd);
 		if (file_to == -1 || wr == -1)
